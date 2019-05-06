@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "SofiaRegular";
+    src: url("../fonts/SofiaProRegular.ttf") format("truetype");
+}
+
+body > section {
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    background-image: linear-gradient(#64b3f4, #c2e59c);
+    /* background-image: linear-gradient(#4CA1AF, #c4e0e5); */
+    /* background-image: linear-gradient(#EECDA3, #1fddff); */
+    /* background-image: linear-gradient(#EECDA3, #ef629f); */
+    /* background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 25%; */
+    height: 40em;
+    text-align: center;
+    font-family: "SofiaRegular"
+}
+
+div > label {
+  width: 5em;
+  color: black;
+  background-color: white;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+div > label:hover {
+  background-color: lightgrey;
+}
+
+form > h1 {
+  margin: 0em;
+  font-size: 2em;
+}
+
+section > form:nth-of-type(2) {
+    color: white;
+    font-size: 1em;
+    margin: 1em;
+    margin-top: 2em;
+}
+
+section > form:nth-of-type(1) {
+    padding-top: 8em;
+}
+
+form > div {
+  display: flex;
+  justify-content: center;
+  margin-top: -1.2em;
+}
+
+[type="search"] {
+    margin-top: 4em;
+    width: 100%;
+    border: 2px solid #B5C1CB;
+    border-radius: 0.7em 0em 0em 0.7em;
+    color: #B3B6B7;
+    font-family: "SofiaRegular"
+    font-size: 0.9em;
+    padding: 0.6em;
+    max-width: 50em;
+}
+
+section [type="submit"] {
+    margin-top: 3.6em;
+    background-color: #4CA1AF;
+    border: 2px solid #B5C1CB;
+    padding: 0.35em 0.8em 0.5em;
+    margin-left: -5px;
+    border-radius: 0em 0.5em 0.5em 0em;
+    color: white;
+    font-size: 1em;
+    font-family: "SofiaRegular"
+    position: relative;
+}
+
+main > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0% 10%;
+}
+
+img {
+   box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+}
+
+div > img {
+    width: 20em;
+    height: 12em;
+    object-fit: cover;
+    margin: 1em;
+}
+
+div > label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+main > div:first-of-type {
+  display: flex;
+  margin: 1em;
+  font-family: "SofiaRegular"
+}
+
+.filter {
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  display: flex;
+}
+
+.filter > h1 {
+  margin: 0em;
+  margin-right: 0.2em;
+  font-size: 1em;
+}
+
+.filter > button {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border-color: white;
+  border-style: solid;
+  background-color: white;
+  font-seize: 1em;
+  font-family: "SofiaRegular"
+}
+
+.filter > button:hover {
+  background-color: lightgrey
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}

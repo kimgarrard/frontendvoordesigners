@@ -1,17 +1,80 @@
-<html>
-  <head></head>
-  <body>
-    <h1>Opdracht 1 - versie 1</h1>
-    <p>
-      Hier komt de HTML van de interactieve demo te staan voor de eerste opdracht:
-      Ontwerp een user interface voor een gegeven use case.
-      Werk je ontwerp uit in HTML, CSS en Javascript om te kunnen testen in een browser.
-    </p>
-    <ol>
-      <li>Als ik een lijst films heb gevonden, wil ik leuke films kunnen opslaan om ze thuis te ...</li>
-      <li>In een lijst gevonden studentenhuizen wil ik details kunnen bekijken om te bepalen of de kamer geschikt is.</li>
-      <li>In een verzameling muzieknummers wil ik de volgorde kunnen veranderen om een vette playlist te maken.</li>
-      <li>Als ik foto's zoek wil ik kunnen selecteren op kleur om verassende zoekresultaten te krijgen.</li>
-    </ol>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fotogallerij</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fotos.css">
+</head>
+
+<body>
+
+    <section>
+
+        <form action="hallo">
+            <input type="search" placeholder="Zoek mooie foto's" class="zoekveld">
+            <input type="submit" value="Zoek" class="zoek">
+        </form>
+
+
+
+        <form>
+            <h1>Kies op kleur:</h1><br>
+
+            <div>
+              <label>Rood<input type="radio" name="red" class="red"></label>
+              <label>Blauw<input type="radio" name="blue" class="blue"></label>
+              <label>Groen<input type="radio" name="green" class="green"></label>
+              <label>Geel<input type="radio" name="yellow" class="yellow"></label>
+          </div>
+        </form>
+
+    </section>
+
+    <main>
+
+        <div class="hidden" id="filter">
+          <div class="filter">
+            <h1></h1>
+            <button>X</button>
+          </div>
+        </div>
+
+        <div>
+            <img src="images/Blauw1.jpg" class="Blauw">
+            <img src="images/Geel1.jpg" class="Geel">
+            <img src="images/Groen1.jpg" class="Groen">
+            <img src="images/Rood1.jpg" class="Rood">
+
+            <img src="images/Blauw2.jpg" class="Blauw">
+            <img src="images/Geel2.jpg" class="Geel">
+            <img src="images/Groen2.jpg" class="Groen">
+            <img src="images/Rood2.jpg" class="Rood">
+
+            <img src="images/Blauw3.jpg" class="Blauw">
+            <img src="images/Geel3.jpg" class="Geel">
+            <img src="images/Groen3.jpg" class="Groen">
+            <img src="images/Rood3.jpg" class="Rood">
+
+            <img src="images/Blauw4.jpg" class="Blauw">
+            <img src="images/Geel4.jpg" class="Geel">
+            <img src="images/Groen4.jpg" class="Groen">
+            <img src="images/Rood4.jpg" class="Rood">
+
+            <img src="images/Blauw5.jpg" class="Blauw">
+            <img src="images/Geel5.jpg" class="Geel">
+            <img src="images/Groen5.jpg" class="Groen">
+            <img src="images/Rood5.jpg" class="Rood">
+
+        </div>
+
+    </main>
+
+<script src="js/fotos.js"></script>
+
+</body>
+
+
 </html>
