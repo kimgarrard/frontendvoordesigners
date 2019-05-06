@@ -8,6 +8,7 @@ Feedback bij versie 1:
 - Snapt niet waar de site over gaat, mist een titel of logo
 - Kan filter niet wegklikken
 - Foto's laden heel langzaam
+http://htmlpreview.github.io/?https://github.com/kimgarrard/frontendvoordesigners/blob/master/opdracht1/v1/index.html
 
 Verbeterd bij versie 2:
 - Filter werkt goed
