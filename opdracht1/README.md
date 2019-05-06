@@ -1,11 +1,18 @@
 # frontend voor designers - opdracht 1
-Hier beschrijf je de opdracht, wat je hebt gemaakt en hoe je je ontwerp door verschillende versies te testen hebt verbeterd. Bij iedere test voeg je een link toe naar de betreffende demo.
+Ik heb gekozen voor de opdracht: 
+Als ik foto's zoek wil ik kunnen selecteren op kleur om verassende zoekresultaten te krijgen.
 
-Bijvoorbeel bij de demo van versie in kun je zo een link maken, zodat iedereen de demo zelf kan uitproberen:
+Ik heb een fotogallerij site gemaakt, waarbij je foto's kan filteren op kleur en foto's groot kunt bekijken. 
+Feedback bij versie 1:
+- Filter werkt nog niet helemaal goed
+- Snapt niet waar de site over gaat, mist een titel of logo
+- Kan filter niet wegklikken
+- Foto's laden heel langzaam
 
-[Demo 1 voor opdracht 1](https://koopreynders.github.io/frontendvoordesigners/opdracht1/v1/)
-
-
-Je kan ook een link plaatsen naar de bron code van de demo:
-
-[Code demo 1 voor opdracht 1](https://github.com/KoopReynders/frontendvoordesigners/blob/master/opdracht1/v1/)
+Verbeterd bij versie 2:
+- Filter werkt goed
+- Kan filter wegklikken
+- Logo met stukje tekst toegevoegd
+- Achtergrondkleur verandert per kleur
+- Gradient animatie
+- Foto kan vergroten als je erop klikt
