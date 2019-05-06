@@ -1,9 +1,102 @@
-<html>
-  <head></head>
-  <body>
-    <h1>Opdracht 1 - versie 2</h1>
-    <p>
-      Hier komt de HTML van de interactieve demo te staan voor de tweede versie van de eerste opdracht.
-    </p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fotogallerij</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fotos.css">
+</head>
+
+<body>
+
+    <section>
+
+        <form action="hallo">
+            <div><a href="index.html">Fotogallerij</a></div>
+            <p>De mooiste foto's met de mooiste kleuren</p>
+            <input type="search" placeholder="Zoek mooie foto's" class="zoekveld">
+            <input type="submit" value="Zoek" class="zoek">
+        </form>
+
+
+
+        <form>
+            <h1>Kies op kleur:</h1><br>
+
+            <div>
+              <label>Rood<input type="radio" name="red" class="red"></label>
+              <label>Blauw<input type="radio" name="blue" class="blue"></label>
+              <label>Groen<input type="radio" name="green" class="green"></label>
+              <label>Geel<input type="radio" name="yellow" class="yellow"></label>
+          </div>
+        </form>
+
+    </section>
+
+    <main>
+
+        <div class="hidden" id="filter">
+          <div class="filter">
+            <h1></h1>
+            <button>X</button>
+          </div>
+        </div>
+
+        <div class="fotos">
+            <div class="Blauw"><img src="images/Blauw1.png"></div>
+            <div class="Geel Blauw"><img src="images/Geel1.jpg"></div>
+            <div class="Groen"><img src="images/Groen1.jpg"></div>
+            <div class="Rood"><img src="images/Rood1.jpeg"></div>
+
+            <div class="Blauw"><img src="images/Blauw2.jpg" class="Blauw"></div>
+            <div class="Geel"><img src="images/Geel2.png"></div>
+            <div class="Groen"><img src="images/Groen2.jpg"></div>
+            <div class="Rood"><img src="images/Rood2.jpg"></div>
+
+            <div class="Blauw"><img src="images/Blauw3.jpg" class="Blauw"></div>
+            <div class="Geel Blauw"><img src="images/Geel3.jpg"></div>
+            <div class="Groen"><img src="images/Groen3.jpg"></div>
+            <div class="Rood"><img src="images/Rood3.jpg"></div>
+
+            <div class="Blauw"><img src="images/Blauw4.jpg"></div>
+            <div class="Geel"><img src="images/Geel4.jpg"></div>
+            <div class="Groen Blauw"><img src="images/Groen4.jpg"></div>
+            <div class="Rood Blauw"><img src="images/Rood4.jpg"></div>
+
+            <div class="Blauw"><img src="images/Blauw5.jpg"></div>
+            <div class="Geel"><img src="images/Geel5.jpg"></div>
+            <div class="Groen"><img src="images/Groen5.jpg"></div>
+            <div class="Rood"><img src="images/Rood5.jpg"></div>
+<!--
+            <div class="Blauw"><img src="images/Blauw2.jpg" class="Blauw"></div>
+            <div class="Geel"><img src="images/Geel2.png"></div>
+            <div class="Groen"><img src="images/Groen2.jpg"></div>
+            <div class="Rood"><img src="images/Rood2.jpg"></div>
+
+            <div class="Blauw"><img src="images/Blauw3.jpg" class="Blauw"></div>
+            <div class="Geel Blauw"><img src="images/Geel3.jpg"></div>
+            <div class="Groen"><img src="images/Groen3.jpg"></div>
+            <div class="Rood"><img src="images/Rood3.jpg"></div>
+
+            <div class="Blauw"><img src="images/Blauw4.jpg"></div>
+            <div class="Geel"><img src="images/Geel4.jpg"></div>
+            <div class="Groen Blauw"><img src="images/Groen4.jpg"></div>
+            <div class="Rood Blauw"><img src="images/Rood4.jpg"></div>
+
+            <div class="Blauw"><img src="images/Blauw5.jpg"></div>
+            <div class="Geel"><img src="images/Geel5.jpg"></div>
+            <div class="Groen"><img src="images/Groen5.jpg"></div>
+            <div class="Rood"><img src="images/Rood5.jpg"></div> -->
+
+        </div>
+
+    </main>
+
+<script src="js/fotos.js"></script>
+
+</body>
+
+
 </html>
