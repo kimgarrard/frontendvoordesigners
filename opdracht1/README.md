@@ -10,7 +10,7 @@ Feedback bij versie 1:
 - Foto's laden heel langzaam
 - Ziet niet op welke kleur je hebt gefilterd
 
-http://htmlpreview.github.io/?https://github.com/kimgarrard/frontendvoordesigners/blob/master/opdracht1/v1/index.html
+https://kimgarrard.github.io/frontendvoordesigners/opdracht1/v1/
 
 Verbeterd bij versie 2:
 - Filter werkt goed (door middel van for loop)
@@ -21,7 +21,7 @@ Verbeterd bij versie 2:
 - Foto kan vergroten als je erop klikt
 - Website is responsive
 
-http://htmlpreview.github.io/?https://github.com/kimgarrard/frontendvoordesigners/blob/master/opdracht1/v2/index.html
+https://kimgarrard.github.io/frontendvoordesigners/opdracht1/v2/
 
 # Principles of User Interface Design
 04 - Keep Users in control
