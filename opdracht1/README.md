@@ -23,6 +23,8 @@ Verbeterd bij versie 2:
 
 https://kimgarrard.github.io/frontendvoordesigners/opdracht1/v2/
 
+![](Fotogallerij.gif)
+
 # Principles of User Interface Design
 04 - Keep Users in control
 
