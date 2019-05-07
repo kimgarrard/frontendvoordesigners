@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "SofiaRegular";
+    src: url("../fonts/SofiaProRegular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Write";
+    src: url("../fonts/BeautyDemo.ttf") format("truetype");
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5em 40em;
+}
+
+nav a {
+  color: black;
+  font-family: SofiaRegular;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+body section:first-of-type {
+  display: flex;
+}
+
+body section:first-of-type div:first-of-type {
+  width: 50%;
+  height: 100vh;
+  background-color: darkblue;
+}
+
+body section:first-of-type img {
+  position: absolute;
+  width: 35%;
+  height: 70vh;
+  top: 20%;
+  left: 7%;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: SofiaRegular;
+  font-size: 8em;
+  color: grey;
+  transform: rotate(90deg);
+  position: fixed;
+  margin: 3em 36%;
+}
+
+body section:first-of-type div:nth-of-type(2) {
+  width: 50%;
+  height: 100vh;
+  padding: 40vh 10em;
+  font-family: SofiaRegular;
+}
