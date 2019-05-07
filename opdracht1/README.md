@@ -21,4 +21,5 @@ Verbeterd bij versie 2:
 
 http://htmlpreview.github.io/?https://github.com/kimgarrard/frontendvoordesigners/blob/master/opdracht1/v2/index.html
 
+###### Belangrijk
 Links werken niet helemaal, fonts en afbeeldingen worden niet altijd geladen. 
