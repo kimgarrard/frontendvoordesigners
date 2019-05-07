@@ -236,7 +236,6 @@ button.onclick = function(){
 
 
 var pictures = document.querySelectorAll('.fotos div');
-var foto = document.querySelectorAll(".fotos div img");
 
 pictures.forEach(function(pic){
   pic.addEventListener('click', function(e){
