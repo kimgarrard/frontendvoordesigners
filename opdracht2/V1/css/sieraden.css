@@ -89,12 +89,13 @@ main {
   position: relative;
   margin: auto;
   margin-top: 10%;
-  padding: 5em 0em;
+  padding: 5em 0em 1em;
 }
 
 .slideshow-container img {
   height: 50vh;
   object-fit: cover;
+  /* border: 20px solid white; */
 }
 
 /* Next & previous buttons */
@@ -148,6 +149,7 @@ main {
 
 .dots {
   padding-bottom: 2em;
+  text-align:center
 }
 
 /* The dots/bullets/indicators */
@@ -167,8 +169,8 @@ main {
 }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  /* -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s; */
   animation-name: fade;
   animation-duration: 1.5s;
 }
