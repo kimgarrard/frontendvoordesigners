@@ -91,9 +91,10 @@ body section:first-of-type div:nth-of-type(1) {
   width: 60em;
   background-color: #114351;
   margin-top: 10%;
+  width: 58%;
 }
 
-#carousel div {
+#carousel div:nth-of-type(1) {
   display: flex;
   width: 500em;
 }
@@ -103,7 +104,7 @@ picture {
   height: 40em;
   object-fit: cover;
   overflow: hidden;
-  margin: 5em 10em;
+  margin: 5em 10em 2em;
   display: flex;
   justify-content: center;
   border: 1em white solid;
@@ -121,25 +122,25 @@ picture:nth-of-type(3) img {
 
 .positionPic1 {
   transform: translateX(0em);
-  animation-name: animationpic1;
+  animation-name: animationL1;
   animation-duration: 1s;
 }
 
 .positionPic2 {
   transform: translateX(-60em);
-  animation-name: animationpic2;
+  animation-name: animationL2;
   animation-duration: 1s;
 }
 
 .positionPic3 {
   transform: translateX(-120em);
-  animation-name: animationpic3;
+  animation-name: animationL3;
   animation-duration: 1s;
 }
 
-@keyframes animationpic1 {
+@keyframes animationL1 {
   0% {
-    transform: translateX(-120em)
+    transform: translateX(-120em);
   }
 
   100% {
@@ -147,7 +148,7 @@ picture:nth-of-type(3) img {
   }
 }
 
-@keyframes animationpic2 {
+@keyframes animationL2 {
   0% {
     transform: translateX(0em)
   }
@@ -157,7 +158,7 @@ picture:nth-of-type(3) img {
   }
 }
 
-@keyframes animationpic3 {
+@keyframes animationL3 {
   0% {
     transform: translateX(-60em)
   }
@@ -167,49 +168,120 @@ picture:nth-of-type(3) img {
   }
 }
 
+
+.position1 {
+  transform: translateX(0em);
+  animation-name: animationR1;
+  animation-duration: 1s;
+}
+
+.position2 {
+  transform: translateX(-60em);
+  animation-name: animationR2;
+  animation-duration: 1s;
+}
+
+.position3 {
+  transform: translateX(-120em);
+  animation-name: animationR3;
+  animation-duration: 1s;
+}
+
+@keyframes animationR1 {
+  0% {
+    transform: translateX(-60em)
+  }
+
+  100% {
+    transform: translateX(0em);
+  }
+}
+
+@keyframes animationR2 {
+  0% {
+    transform: translateX(-120em)
+  }
+
+  100% {
+    transform: translateX(-60em);
+  }
+}
+
+@keyframes animationR3 {
+  0% {
+    transform: translateX(0em)
+  }
+
+  100% {
+    transform: translateX(-120em);
+  }
+}
+
+.pos1 {
+  transform: translateX(0em);
+}
+
+.pos2 {
+  transform: translateX(-60em);
+}
+
+.pos3 {
+  transform: translateX(-120em);
+}
+
 .dots {
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   text-align:center
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  height: 18px;
+  width: 18px;
+  margin: 0 0.3em;
+  /* background-color: #aaa296; */
+  background-color: grey;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: white;
+  transform: scale(1.2);
+  transition: transform 0.6s ease;
 }
 
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
-  color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.5em;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  margin-top: 120vh;
+  margin-top: 118vh;
   color: white;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(241, 231, 218, 0.3);
+}
+
+.buttonActive {
+  animation-name: BG;
+  animation-duration: 0.2s;
+}
+
+@keyframes BG {
+  100% {
+    background-color: rgba(241, 231, 218, 0.4);
+  }
 }
 
 .next {
-  right: 83vh;
+  right: 81vh;
   border-radius: 3px 0 0 3px;
 }
 
@@ -219,10 +291,58 @@ picture:nth-of-type(3) img {
 
 .fade {
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
   from {opacity: 0}
   to {opacity: 1}
+}
+
+.fade2 {
+  animation-name: fade2;
+  animation-duration: 2s;
+}
+
+@keyframes fade2 {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+
+
+.assortiment {
+  font-family: SofiaRegular;
+  font-size: 5em;
+  position: absolute;
+  top: 140vh;
+  right: 15vh;
+  color: #aaa296;
+  opacity: 0;
+  /* text-align: right; */
+}
+
+
+.tekst {
+  animation-name: tekstKomt;
+  animation-duration: 2s;
+  opacity: 1;
+}
+
+@keyframes tekstKomt {
+  0% {
+    opacity: 0;
+    margin-right: -6em;
+  }
+
+  100% {
+    opacity: 1;
+    margin-right: 0em;
+  }
+}
+
+
+.current {
+  background-color: lightblue;
+  transform: scale(1.2);
 }
