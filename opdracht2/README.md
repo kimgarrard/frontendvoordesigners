@@ -12,6 +12,7 @@ Boven de slider heb ik ook nog een intro geschreven en een foto is te zien, zoda
 [Link V1](https://kimgarrard.github.io/frontendvoordesigners/opdracht2/V1/)
 
 **Verbeterd bij versie 2:**
+
 De slider die ik had had ik voornamelijk op het internet gevonden, ik snapte wel hoe deze werkte alleen ik heb het niet zelf helemaal gemaakt. Omdat het bij dit vak erom gaat dat je met de kennis die je al hebt dingen moet leren maken, wilde ik de slider opnieuw maken als oefening. Zo kwam ik erachter dat ik nog wel tegen dingen aanliep, maar uiteindelijk is het gelukkig helemaal gelukt. 
 - On scroll element erbij gedaan (als extra oefening)
 - Site mooier gemaakt qua design
