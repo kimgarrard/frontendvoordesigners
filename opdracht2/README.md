@@ -22,6 +22,8 @@ De slider die ik had had ik voornamelijk op het internet gevonden, ik snapte wel
 
 [Link V2](https://kimgarrard.github.io/frontendvoordesigners/opdracht2/V2/)
 
+![](Sieraden.gif)
+
 # Principles of User Interface Design
 **06 - One primary action per screen**
 
