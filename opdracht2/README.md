@@ -9,7 +9,7 @@ Boven de slider heb ik ook nog een intro geschreven en een foto is te zien, zoda
 - De bolletjes onder de slider geven qua kleur geen duidelijke feedback: zou eerder licht zeggen als je eentje selecteerd
 - Overgang van beelden loopt soepel door de animatie
 
-[Link V1](https://kimgarrard.github.io/frontendvoordesigners/opdracht2/v1/)
+[Link V1](https://kimgarrard.github.io/frontendvoordesigners/opdracht2/V1/)
 
 **Verbeterd bij versie 2:**
 De slider die ik had had ik voornamelijk op het internet gevonden, ik snapte wel hoe deze werkte alleen ik heb het niet zelf helemaal gemaakt. Omdat het bij dit vak erom gaat dat je met de kennis die je al hebt dingen moet leren maken, wilde ik de slider opnieuw maken als oefening. Zo kwam ik erachter dat ik nog wel tegen dingen aanliep, maar uiteindelijk is het gelukkig helemaal gelukt. 
@@ -19,9 +19,7 @@ De slider die ik had had ik voornamelijk op het internet gevonden, ik snapte wel
 - Met keyframes gezorgd dat het lijkt alsof de foto's echt van links naar rechts bewegen (en terug)
 - Kleuren van de bolletjes onderin veranderd
 
-[Link V2](https://kimgarrard.github.io/frontendvoordesigners/opdracht2/v2/)
-
-![](Sieraden.gif)
+[Link V2](https://kimgarrard.github.io/frontendvoordesigners/opdracht2/V2/)
 
 # Principles of User Interface Design
 **06 - One primary action per screen**
