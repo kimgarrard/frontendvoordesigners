@@ -1,39 +1,43 @@
 # Frontend voor Designers - opdracht 2
-Ik heb gekozen voor de opdracht: 
-Als ik foto's zoek wil ik kunnen selecteren op kleur om verassende zoekresultaten te krijgen.
+Ik heb gemaakt:
+een sieraden website waarbij je het assortiment in een slider kunt bekijken, deze slider kun je besturen met: pijltjes naast de foto (click), bolletjes onderin (click) en de pijltjes op het toetsenbord. 
 
-Ik heb een fotogallerij site gemaakt, waarbij je foto's kan filteren op kleur en foto's groot kunt bekijken. 
+Boven de slider heb ik ook nog een intro geschreven en een foto is te zien, zodat het duidelijk is waar de site over gaat en zodat het op een website lijkt. Verder wilde ik gewoon oefenen met code schrijven voor een website. 
+
 **Feedback bij versie 1:**
-- Filter werkt nog niet helemaal goed
-- Snapt niet waar de site over gaat, mist een titel of logo
-- Kan filter niet wegklikken
-- Foto's laden heel langzaam
-- Ziet niet op welke kleur je hebt gefilterd
+- Je kan zien dat de slider op het internet is gezocht
+- De bolletjes onder de slider geven qua kleur geen duidelijke feedback: zou eerder licht zeggen als je eentje selecteerd
+- Overgang van beelden loopt soepel door de animatie
 
-[Link V1](https://kimgarrard.github.io/frontendvoordesigners/opdracht1/v1/)
+[Link V1](https://kimgarrard.github.io/frontendvoordesigners/opdracht2/v1/)
 
 **Verbeterd bij versie 2:**
-- Filter werkt goed (door middel van for loop)
-- Kan filter wegklikken
-- Logo met stukje tekst toegevoegd
-- Achtergrondkleur verandert per kleur (op rood filteren is een rode gradient achtergrond)
-- Gradient animatie in de achtergrond
-- Foto kan vergroten als je erop klikt
-- Website is responsive
+De slider die ik had had ik voornamelijk op het internet gevonden, ik snapte wel hoe deze werkte alleen ik heb het niet zelf helemaal gemaakt. Omdat het bij dit vak erom gaat dat je met de kennis die je al hebt dingen moet leren maken, wilde ik de slider opnieuw maken als oefening. Zo kwam ik erachter dat ik nog wel tegen dingen aanliep, maar uiteindelijk is het gelukkig helemaal gelukt. 
+- On scroll element erbij gedaan (als extra oefening)
+- Site mooier gemaakt qua design
+- Slider opnieuw met eigen code gemaakt
+- Met keyframes gezorgd dat het lijkt alsof de foto's echt van links naar rechts bewegen (en terug)
+- Kleuren van de bolletjes onderin veranderd
 
-[Link V2](https://kimgarrard.github.io/frontendvoordesigners/opdracht1/v2/)
+[Link V2](https://kimgarrard.github.io/frontendvoordesigners/opdracht2/v2/)
 
-![](Fotogallerij.gif)
+![](Sieraden.gif)
 
 # Principles of User Interface Design
-**04 - Keep Users in control**
+**06 - One primary action per screen**
 
-Humans are most comfortable when they feel in control of themselves and their environment. Thoughtless software takes away that comfort by forcing people into unplanned interactions, confusing pathways, and surprising outcomes. Keep users in control by regularly surfacing system status, by describing causation (if you do this that will happen) and by giving insight into what to expect at every turn. Don't worry about stating the obvious…the obvious almost never is.
+Every screen we design should support a single action of real value to the person using it. This makes it easier to learn, easier to use, and easier to add to or build on when necessary. Screens that support two or more primary actions become confusing quickly. Like a written article should have a single, strong thesis, every screen we design should support a single, strong action that is its raison d'etre.
 
-Dit heb ik toegepast doordat de gebruiker bepaalt: hij / zij kan de foto's bekijken en ook groter bekijken. Ook kan de gebruiker zoeken en filteren op kleur, deze aanpassingen kunnen ook weer hersteld worden. Op deze manier heeft de gebruiker de controle: hij / zij kan zelf input geven en deze ook weer herstellen. 
+Dit heb ik toegepast doordat er maar 1 actie op het scherm is: namelijk de slider. Bij de slider kan de gebruiker de foto's bekijken door deze te besturen (dit kan op drie verschillende manieren), verder zijn er geen acties op het scherm. 
 
-**11 - Strong visual hierarchies work best**
+**08 - Provide a natural next step**
 
-A strong visual hierarchy is achieved when there is a clear viewing order to the visual elements on a screen. That is, when users view the same items in the same order every time. Weak visual hierarchies give little clue about where to rest one's gaze and end up feeling cluttered and confusing. In environments of great change it is hard to maintain a strong visual hierarchy because visual weight is relative: when everything is bold, nothing is bold. Should a single visually heavy element be added to a screen, the designer may need to reset the visual weight of all elements to once again achieve a strong hierarchy. Most people don't notice visual hierarchy but it is one of the easiest ways to strengthen (or weaken) a design.
+Very few interactions are meant to be the last, so thoughtfully design a next step for each interaction a person has with your interface. Anticipate what the next interaction should be and design to support it. Just as we like in human conversation, provide an opening for further interaction. Don't leave a person hanging because they've done what you want them to do…give them a natural next step that helps them further achieve their goals.
 
-Dit heb ik toegepast door de knoppen en de filters wit te maken: hierdoor steken deze uit op de achtergrond. Door kleurgebruik vallen deze op. Verder heb ik ook de achtergrondkleur aangepast op de kleur waarop je filtert: hierdoor wordt de site met de kleuren een mooi geheel en is het gelijk duidelijk op welke kleur je hebt geklikt. 
+Dit heb ik toegepast door pijltjes bij de carousel te laten zien: hierdoor zijn er visuele elementen waaraan je kan zien dat er bij de slider meer te doen is dan alleen 1 foto te bekijken. De pijltjes maken duidelijk dat er op geklikt kan worden, net als de bolletjes onder de foto. Verder kun je de carousel ook besturen met de pijltjes op het toetsenbord, deze lijken visueel gezien op de pijltjes knoppen. 
+
+**14 - Progressive disclosure**
+
+Show only what is necessary on each screen. If people are making a choice, show enough information to allow them the choice, then dive into details on a subsequent screen. Avoid the tendency to over-explain or show everything all at once. When possible, defer decisions to subsequent screens by progressively disclosing information as necessary. This will keep your interactions more clear.
+
+Dit is niet heel erg van toepassing bij mijn site, omdat de site maar 1 actie heeft. Wel heb ik gezorgd dat er niet te veel op het scherm is en de bolletjes maken het bijvoorbeeld duidelijk dat er 3 foto's te zien zijn. 
