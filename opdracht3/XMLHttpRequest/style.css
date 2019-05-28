@@ -5,18 +5,47 @@ body{
     background: #eee;
     font-family: sans-serif;
 }
-main{
+
+nav {
+  position: fixed;
+}
+
+nav button {
+  border-radius: 10em;
+  width: 3em;
+  height: 3em;
+}
+
+nav button:hover {
+  background-color: orange;
+}
+
+.navSelected {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+main {
   background: white;
   margin: 0 auto;
   padding: 2em;
-  max-width: 34em;
+  width: 100%;
   box-shadow: 0.5em 1em 0.5em -0.5em #777;
 }
-main section article:nth-of-type(odd){
-  background: lightgreen;
+
+main section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-main section article:nth-of-type(even){
-  background: coral;
+
+main section article{
+  width: 60vh;
+  margin: 2em;
+  background-color: lightgrey;
+  padding: 0.5em;
 }
 
 .loader{
@@ -26,5 +55,20 @@ main section article:nth-of-type(even){
   display: none;
 }
 .show{
-  display: block
+  display: block;
+}
+
+
+
+
+article > section img {
+  width: 12em;
+  height: 10em;
+  border: 2px solid white;
+  margin: 1em;
+  object-fit: cover;
+}
+
+.none {
+  display: none;
 }
