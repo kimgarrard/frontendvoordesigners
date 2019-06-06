@@ -1,13 +1,31 @@
 *{
   box-sizing: border-box;
   }
+
+  @font-face {
+      font-family: "SofiaRegular";
+      src: url("../fonts/SofiaProRegular.ttf") format("truetype");
+  }
+
+  @font-face {
+      font-family: "Write";
+      src: url("../fonts/BeautyDemo.ttf") format("truetype");
+  }
+
+
 body{
     background: #eee;
-    font-family: sans-serif;
+    font-family: SofiaRegular;
+    margin: 0em;
 }
+
 
 nav {
   position: fixed;
+  width: 100%;
+  margin: 0em;
+  padding: 0.5em;
+  background-color: darkred;
 }
 
 nav button {
@@ -42,7 +60,7 @@ main section {
 }
 
 main section article{
-  width: 60vh;
+  width: 90vh;
   margin: 2em;
   background-color: lightgrey;
   padding: 0.5em;
@@ -62,11 +80,14 @@ main section article{
 
 
 article > section img {
-  width: 12em;
-  height: 10em;
-  border: 2px solid white;
-  margin: 1em;
+  width: 90vh;
+  height: 25em;
+  border-radius: 1em;
   object-fit: cover;
+}
+
+article > p {
+  margin-top: 0em;
 }
 
 .none {

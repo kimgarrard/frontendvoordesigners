@@ -1,4 +1,5 @@
 console.log("huh?",this);
+console.log("test");
 //var uri = "https://api.data.amsterdam.nl/panorama/recente_opnames/2018/?format=json";
 //var uri = "https://open.data.amsterdam.nl/Attracties.json";
 //var uri = "https://open.data.amsterdam.nl/Activiteiten.json";
