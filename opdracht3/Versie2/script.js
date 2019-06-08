@@ -14,7 +14,8 @@ var title = document.querySelector('h1');
 var section = document.querySelector('section');
 var button = document.querySelector("button");
 var loaderElement = document.querySelector(".loader");
-console.log("loader",loaderElement);
+// console.log("loader",loaderElement);
+var buttonUp = document.querySelector("article + p");
 
 var data; //wordt gevuld na het laden van de json
 var language = "nl";
@@ -64,6 +65,10 @@ function showData(jsonObj) {
 
     var titel = document.createElement('h2');
     titel.textContent = data[i].title;
+
+    buttonUp.addEventListener("click", function(){
+      window.scrollTo(0, 0);
+    });
 
     var imgSection = document.createElement("section");
     var media = data[i].media;
@@ -193,7 +198,28 @@ function slider() {
         }
     };
 
-    setInterval(moveRight, 5*1000);
+    setInterval(moveRight, 6*1000);
+
+    scrollToElement();
+}
+
+
+function scrollToElement() {
+  img1.addEventListener("click", function(){
+      window.scrollTo(0, 18750);
+  });
+
+  img2.addEventListener("click", function(){
+      window.scrollTo(0, 20180);
+  });
+
+  img3.addEventListener("click", function(){
+      window.scrollTo(0, 9750);
+  });
+
+  img4.addEventListener("click", function(){
+      window.scrollTo(0, 16500);
+  });
 }
 
 // function test() {
@@ -227,6 +253,7 @@ function setupLanguage() {
     buttonES.classList.remove("langSelected");
 
     buttonDE.classList.add("langSelected");
+
     doedetaalwisseltruuk();
   });
 

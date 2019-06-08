@@ -66,9 +66,6 @@ nav > div:nth-of-type(1) button {
 }
 
 nav > div:nth-of-type(1) button:hover {
-  /* background-color: #632A50; */
-  /* transform: scale(1.2);
-  font-family: SofiaBold; */
   box-shadow: inset 0 3px 40px 3px rgba(255,255,255,0.6), 0px 4px 5px 0px rgba(0,0,0, 0.2);
 }
 
@@ -142,6 +139,13 @@ main {
   height: 50vh;
   width: 105em;
   overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+  transition: transform 0.6s ease;
 }
 
 .sliderblock {
@@ -188,10 +192,12 @@ main {
 @keyframes fadeIn {
   0% {
     opacity: 0.5;
+    transform: scale(1.2);
   }
 
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -204,6 +210,7 @@ main {
   background: rgba(0,0,0,0.6);
   margin-top: -17em;
   color: rgba(255,255,255,0.8);
+  cursor: pointer;
 }
 
 .slider a:nth-last-of-type(1) {
@@ -215,6 +222,26 @@ main {
   background-color: rgba(117,185,190,0.8);
 }
 
+article + p {
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0, 0.2);
+  width: 1.6em;
+  height: 1.6em;
+  padding: 0.2em;
+  border-radius: 100%;
+  font-size: 2em;
+  color: #75B9BE;
+  padding-left: 0.46em;
+  position: fixed;
+  margin: 1em;
+  margin-top: 11em;
+  cursor: pointer;
+}
+
+article + p:hover {
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0, 0.3);
+  color: #632A50;
+}
+
 main > section {
   display: flex;
   width: 100%;
@@ -222,12 +249,9 @@ main > section {
   justify-content: center;
 }
 
-main section article:nth-of-type(odd){
-  background: white;
-}
-
 main section article:nth-of-type(even){
-  background: #DEE5E5;
+  background: rgba(117,185,190,0.15);
+  padding: 1em;
 }
 
 main section article{
@@ -254,10 +278,14 @@ main section article h2 {
 
 
 article > section img {
-  width: 90vh;
+  width: 86.6vh;
   height: 25em;
   border-radius: 1em;
   object-fit: cover;
+}
+
+article > section img:not(:first-of-type) {
+  display: none;
 }
 
 article > p {
