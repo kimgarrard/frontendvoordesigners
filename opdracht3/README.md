@@ -6,7 +6,7 @@ De website heeft:
 - Een navigatiebalk
 - Taal selectie
 - Zoekbalk
-- Slider met attracties
+- Slider met attracties (te bedienen met muis of toetsenbord)
 - Lijst van attracties met beschrijving en soms een foto
 
 **Feedback bij versie 1:**
