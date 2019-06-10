@@ -29,20 +29,20 @@ De website heeft:
 [Link V2](https://kimgarrard.github.io/frontendvoordesigners/opdracht3/Versie3/)
 
 # Principles of User Interface Design
-**06 - One primary action per screen**
+**04 - Keep users in control**
 
-Every screen we design should support a single action of real value to the person using it. This makes it easier to learn, easier to use, and easier to add to or build on when necessary. Screens that support two or more primary actions become confusing quickly. Like a written article should have a single, strong thesis, every screen we design should support a single, strong action that is its raison d'etre.
+Humans are most comfortable when they feel in control of themselves and their environment. Thoughtless software takes away that comfort by forcing people into unplanned interactions, confusing pathways, and surprising outcomes. Keep users in control by regularly surfacing system status, by describing causation (if you do this that will happen) and by giving insight into what to expect at every turn. Don't worry about stating the obvious…the obvious almost never is.
 
-Dit heb ik toegepast doordat er maar 1 actie op het scherm is: namelijk de slider. Bij de slider kan de gebruiker de foto's bekijken door deze te besturen (dit kan op drie verschillende manieren), verder zijn er geen acties op het scherm. 
+Dit heb ik toegepast door meerdere dingen. Ten eerste kun je de slider (naast dat deze automatisch 'afspeelt') zelf bedienen, met de pijltjes op het scherm en de pijltjes op het toetsenbord. Verder heb ik een knop linksonderin gemaakt waarbij de pagina weer helemaal naar boven scrollt, dit scheelt tijd en helpt de gebruiker. Ook heb ik taalopties, de gebruiker kan zelf zijn / haar taal instellen. 
 
-**08 - Provide a natural next step**
+**09 - Appearance follows behavior**
 
-Very few interactions are meant to be the last, so thoughtfully design a next step for each interaction a person has with your interface. Anticipate what the next interaction should be and design to support it. Just as we like in human conversation, provide an opening for further interaction. Don't leave a person hanging because they've done what you want them to do…give them a natural next step that helps them further achieve their goals.
+Humans are most comfortable with things that behave the way we expect. Other people, animals, objects, software. When someone or something behaves consistently with our expectations we feel like we have a good relationship with it. To that end designed elements should look like how they behave. Form follows function. In practice this means that someone should be able to predict how an interface element will behave merely by looking at it. If it looks like a button it should act like a button. Don't get cute with the basics of interaction…keep your creativity for higher order concerns.
 
-Dit heb ik toegepast door pijltjes bij de carousel te laten zien: hierdoor zijn er visuele elementen waaraan je kan zien dat er bij de slider meer te doen is dan alleen 1 foto te bekijken. De pijltjes maken duidelijk dat er op geklikt kan worden, net als de bolletjes onder de foto. Verder kun je de carousel ook besturen met de pijltjes op het toetsenbord, deze lijken visueel gezien op de pijltjes knoppen. 
+Dit heb ik ook toegepast op meerdere dingen. Allereerst zien alle buttons er ook uit als buttons, en als je hier overheen hoverd zie je ook een kleine verandering (feedback). De slider is te bedienen door de pijltjesknoppen, deze hebben ook de vorm van pijltjes. De knop waarbij je weer naar boven scrollt, is een pijltje omhoog. Wanneer je hier overheen hoverd, maakt deze ook een beweging omhoog, wat nabootst in het klein wat de knop doet. Verder zijn ook de plaatjes in de carousel klikbaar, als je hierop staat heb ik de cursor veranderd naar een pointer, wat aantoont dat je erop kunt klikken. 
 
-**14 - Progressive disclosure**
+**11 - Strong visual hierarchies work best**
 
-Show only what is necessary on each screen. If people are making a choice, show enough information to allow them the choice, then dive into details on a subsequent screen. Avoid the tendency to over-explain or show everything all at once. When possible, defer decisions to subsequent screens by progressively disclosing information as necessary. This will keep your interactions more clear.
+A strong visual hierarchy is achieved when there is a clear viewing order to the visual elements on a screen. That is, when users view the same items in the same order every time. Weak visual hierarchies give little clue about where to rest one's gaze and end up feeling cluttered and confusing. In environments of great change it is hard to maintain a strong visual hierarchy because visual weight is relative: when everything is bold, nothing is bold. Should a single visually heavy element be added to a screen, the designer may need to reset the visual weight of all elements to once again achieve a strong hierarchy. Most people don't notice visual hierarchy but it is one of the easiest ways to strengthen (or weaken) a design.
 
-Dit is niet heel erg van toepassing bij mijn site, omdat de site maar 1 actie heeft. Wel heb ik gezorgd dat er niet te veel op het scherm is en de bolletjes maken het bijvoorbeeld duidelijk dat er 3 foto's te zien zijn. 
+Dit heb ik toegepast door alle titels bold en groter te maken en de normale tekst kleiner. Ook heb ik de artikelen een achtergrond kleur gegeven: de even artikelen hebben een lichtblauwe achtergrond kleur, waardoor je makkelijker het onderscheid ziet binnen de artikelen. 
