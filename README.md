@@ -1,4 +1,4 @@
-# Frontend voor Designers
+# Frontend voor Designers - Kim
 
 Dit is de [online url](https://kimgarrard.github.io/frontendvoordesigners/) met de opdrachten om te kunnen bekijken en testen in een browser.
 
