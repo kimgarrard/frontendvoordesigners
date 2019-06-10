@@ -1,6 +1,8 @@
 
+// var uri = "http://cors-anywhere.herokuapp.com/https://open.data.amsterdam.nl/Attracties.json";
 var uri = "https://open.data.amsterdam.nl/Attracties.json";
 
+var body = document.querySelector("body");
 var header = document.querySelector('header');
 var title = document.querySelector('h1');
 var section = document.querySelector('section');
@@ -227,10 +229,24 @@ function doedetaalwisseltruuk() {
 function slider() {
   nextButton.onclick = moveRight;
   prevButton.onclick = moveLeft;
+  body.onkeydown = useArrows;
 
   slidertekst.textContent = data[26].title;
 
   var timer = setInterval(moveRight, 6*1000);
+
+    function useArrows(e){
+		    var key_code=e.which||e.keyCode;
+		      switch(key_code){
+			      case 37: //left arrow kew
+				       moveLeft();
+				       break;
+
+            case 39: //right arrow key
+				       moveRight();
+				       break;
+		    }
+	  }
 
     function moveRight() {
 
