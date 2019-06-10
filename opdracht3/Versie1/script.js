@@ -6,8 +6,8 @@ console.log("test");
 //var uri = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json";
 // var uri = "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
 
-// var uri = "https://open.data.amsterdam.nl/Attracties.json";
-var uri = "http://cors-anywhere.herokuapp.com/https://open.data.amsterdam.nl/Attracties.json";
+var uri = "https://open.data.amsterdam.nl/Attracties.json";
+// var uri = "http://cors-anywhere.herokuapp.com/https://open.data.amsterdam.nl/Attracties.json";
 
 var header = document.querySelector('header');
 var title = document.querySelector('h1');
