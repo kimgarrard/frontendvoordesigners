@@ -1,5 +1,5 @@
 
-var uri = "http://cors-anywhere.herokuapp.com/https://open.data.amsterdam.nl/Attracties.json";
+var uri = "https://open.data.amsterdam.nl/Attracties.json";
 
 var header = document.querySelector('header');
 var title = document.querySelector('h1');
