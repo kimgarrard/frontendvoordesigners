@@ -60,7 +60,8 @@ function showData(jsonObj) {
   // //data uit de json halen
   // for (var i = 0; i < data.length; i++) {
 
-  for (var i = eersteitem; i < laatsteitem; i++) { //alleen de eerste 10 aanmaken ..
+  for (var i = eersteitem; i < laatsteitem; i++) { //alleen de eerste 30 aanmaken ..
+
     var attracties = document.createElement('article');
 
     var titel = document.createElement('h2');
@@ -75,10 +76,8 @@ function showData(jsonObj) {
     for (var a = 0; a < media.length; a++) {
       // console.log("media", media);
       var img = document.createElement("img");
-      img.src = media[a].url;
+      img.src = media[0].url;
       imgSection.appendChild(img);
-
-      // console.log("data[1].media[1]", data[1].media[1]);//
 
       img1.src = data[26].media[0].url;
       img2.src = data[28].media[0].url;
@@ -116,6 +115,8 @@ function showData(jsonObj) {
   console.log("functie aanroepen");
   setupLanguage();
   slider();
+  scrollToElement();
+  lazyloading();
 
 } //end: function showdata
 
@@ -124,7 +125,9 @@ function slider() {
   nextButton.onclick = moveRight;
   prevButton.onclick = moveLeft;
 
-  slidertekst.textContent = "Park Frankendael";
+  slidertekst.textContent = data[26].title;
+
+  var timer = setInterval(moveRight, 6*1000);
 
 
     function moveRight() {
@@ -147,20 +150,23 @@ function slider() {
         if (currentPicture == 1) {
           carouselDiv.classList.add("positionPic1");
           img1.classList.add("fade");
-          slidertekst.textContent = "Park Frankendael";
+          slidertekst.textContent = data[26].title;
         } else if (currentPicture == 2) {
           carouselDiv.classList.add("positionPic2");
           img2.classList.add("fade");
-          slidertekst.textContent = "Gaasperplas Park";
+          slidertekst.textContent = data[28].title;
         } else if (currentPicture == 3) {
           carouselDiv.classList.add("positionPic3");
           img3.classList.add("fade");
-          slidertekst.textContent = "Gemeentemuseum Den Haag";
+          slidertekst.textContent = data[15].title;
         } else if (currentPicture == 4) {
           carouselDiv.classList.add("positionPic4");
           img4.classList.add("fade");
-          slidertekst.textContent = "De Oostvaardersplassen";
+          slidertekst.textContent = data[23].title;
         }
+
+        clearInterval(timer);
+        timer = setInterval(moveRight, 6*1000);
     };
 
     function moveLeft() {
@@ -182,44 +188,57 @@ function slider() {
         if (currentPicture == 1) {
           carouselDiv.classList.add("positionPic1");
           img1.classList.add("fade");
-          slidertekst.textContent = "Park Frankendael";
+          slidertekst.textContent = data[26].title;
         } else if (currentPicture == 2) {
           carouselDiv.classList.add("positionPic2");
           img2.classList.add("fade");
-          slidertekst.textContent = "Gaasperplas Park";
+          slidertekst.textContent = data[28].title;
         } else if (currentPicture == 3) {
           carouselDiv.classList.add("positionPic3");
           img3.classList.add("fade");
-          slidertekst.textContent = "Gemeentemuseum Den Haag";
+          slidertekst.textContent = data[15].title;
         } else if (currentPicture == 4) {
           carouselDiv.classList.add("positionPic4");
           img4.classList.add("fade");
-          slidertekst.textContent = "De Oostvaardersplassen";
+          slidertekst.textContent = data[23].title;
         }
+
+        clearInterval(timer);
+        timer = setInterval(moveRight, 6*1000);
     };
-
-    setInterval(moveRight, 6*1000);
-
-    scrollToElement();
 }
 
 
 function scrollToElement() {
   img1.addEventListener("click", function(){
-      window.scrollTo(0, 18750);
+      // window.scrollTo(0, 18750);
+
+      var el1 = document.querySelector("main > section article:nth-of-type(27)");
+      el1.scrollIntoView();
+
   });
 
   img2.addEventListener("click", function(){
-      window.scrollTo(0, 20180);
+      // window.scrollTo(0, 20180);
+
+      var el2 = document.querySelector("main > section article:nth-of-type(29)");
+      el2.scrollIntoView();
   });
 
   img3.addEventListener("click", function(){
-      window.scrollTo(0, 9750);
+      // window.scrollTo(0, 9750);
+
+      var el3 = document.querySelector("main > section article:nth-of-type(16)");
+      el3.scrollIntoView();
   });
 
   img4.addEventListener("click", function(){
-      window.scrollTo(0, 16500);
+      // window.scrollTo(0, 16500);
+
+      var el4 = document.querySelector("main > section article:nth-of-type(24)");
+      el4.scrollIntoView();
   });
+
 }
 
 // function test() {
@@ -364,6 +383,25 @@ function doedetaalwisseltruuk() {
 
 
 } //end: doedetaalwisseltruuk()
+
+
+function lazyloading() {
+
+  window.onscroll = function() {
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        console.log("je bent er");
+        // console.log("laatsteitem", laatsteitem);
+
+        eersteitem = laatsteitem;
+        laatsteitem +=30;
+
+        showData(data);
+
+        console.log("laatsteitem", laatsteitem);
+    }
+  };
+}
+
 
 
 
