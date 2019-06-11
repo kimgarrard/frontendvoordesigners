@@ -5,23 +5,24 @@ een website met attracties van Amsterdam, de data hiervan heb ik uit een json fi
 De website heeft:
 - Een navigatiebalk
 - Taal selectie
-- Zoekbalk
-- Slider met attracties (te bedienen met muis of toetsenbord)
+- Slider met attracties (te bedienen met muis of toetsenbord, klikbaar om naar dat stuk in pagina te scrollen)
+- Knop om weer bovenaan de pagina te komen
 - Lijst van attracties met beschrijving en soms een foto
+- Lazy loading (laadt 30 extra wanneer onderaan de pagina)
 
-**Feedback bij versie 1:**
-- Veel data, misschien lazy loading proberen
+**Feedback bij versie 1: (gevraagd aan huisgenoot)**
+- Veel data, misschien lazy loading proberen (koop)
 - Ziet niet welke taal je geselecteerd hebt
-- Afbeeldingen moeten iets smaller bij de teksten
+- Afbeeldingen staan niet mooi, veel op elkaar
 - Veel foto's bij de teksten
 
 [Link V1](https://kimgarrard.github.io/frontendvoordesigners/opdracht3/Versie1/)
 
 **Verbeterd bij versie 2:**
 - Lazy loading
-- Knop zodat je weer bovenaan de pagina komt
+- Knop zodat je weer bovenaan de pagina komt, want er is veel content
 - Taal geselecteerd zichtbaar
-- Slider toegevoegd met data uit de json
+- Slider toegevoegd met data (afbeelding en titel) uit de json
 - Slider foto's klikbaar zodat je naar dat artikel in de pagina scrollt
 - Loader mooi gemaakt
 - 1 foto bij elk artikel zichtbaar
